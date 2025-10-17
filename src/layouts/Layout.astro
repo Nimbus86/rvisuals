@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+const { title = "rvisuals" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <!-- Linkerkant: icoon + naam -->
+        <div class="nav-left">
+          <span class="letter">R</span>
+          <span class="logo-text">VISUALS</span>
+        </div>
+
+        <!-- Rechterkant: menuknoppen -->
+        <ul class="nav-links">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+   
+    
+      <slot />
+    </main>S
+
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} rvisuals</p> 
+    </footer>
+  </body>
+</html>
+

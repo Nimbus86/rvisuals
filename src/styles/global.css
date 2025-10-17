@@ -1,0 +1,242 @@
+:root {
+  --bg: #ebe3e3;
+  --bg-gradient: linear-gradient(180deg, #dee0d7 0%, #e6dcf0 100%);
+  --text: #030303;
+  --muted: #080808;
+  --accent: #7b2ff7;   /* paars */
+  --accent-2: #00e5ff; /* neon blauw */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg-gradient);
+  color: var(--text);
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #1f8a96fd;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between; /* links icoon, rechts menu */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  font-size: 50px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.letter {
+  color:#654fb4 ;
+  transform: translateY(-10px);
+
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #161616;
+  height: 50x
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #f8f8f8;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-2);
+}
+
+s
+.nav-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #000;
+  transition: transform 0.2s;
+  margin-top: 3rem;
+  display: inline-block;
+  justify-content: center;
+  transform: translateY(30px);
+
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--accent-2);
+  color: var(--accent-2);
+}
+.btn-outline:hover {
+  background: var(--accent-2);
+  color: #000;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  max-width: 700px;
+  margin:0 auto;
+  
+  padding: 6rem 2rem 3rem; /* meer ruimte bovenaan */
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+  /* Gradient als achtergrond */
+
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+
+  /* De gradient alleen op de tekst tonen */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Voor betere compatibiliteit */
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-text p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Thumbnail */
+.thumbnail-section {
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0; /* geen afgeronde hoeken */
+}
+
+/* Info */
+.info-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  text-align: center;
+}
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+
+  /* De gradient alleen op de tekst tonen */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Voor betere compatibiliteit */
+  background-clip: text;
+  color: transparent;
+}
+.info-section p {
+  color: #333;
+  font-size: 1.1rem;
+  
+  
+}
+
+.projects-preview {
+  max-width: 1200px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.project-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  font-size: 2rem;
+  color: white;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: #1f8a96fd;
+}

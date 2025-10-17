@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="rvisuals | Home">
+  <!-- Hero sectie -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welkom bij R-visuals</h1>
+      <p>
+        Streamline je creatieve visie met futuristische visuals en animaties.  
+        Unlock het potentieel van jouw merk met Rvisuals.
+      </p>
+      <div class="hero-buttons">
+        <a href="/projects" class="btn">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thumbnail sectie -->
+ <section class="thumbnail-section">
+  <video class="hero-video" autoplay loop playsinline poster="/assets/video.png">
+    <source src="/public/tekstvlieger.webm" type="video/webm" />
+    <source src="/public/tekstvlieger.mp4" type="video/mp4" />
+  </video>
+</section>
+
+
+  <!-- Info sectie -->
+  <section class="info-section">
+    <h2>Wat wij doen</h2>
+    <p>
+      Bij Rvisuals combineren we design, animatie en technologie om jouw merk
+      een futuristische uitstraling te geven. Van 3D‑visuals tot interactieve
+      AR‑ervaringen: wij zorgen dat jouw verhaal impact maakt.
+    </p>
+  </section>
+
+  <!-- Quicklinks sectie -->
+ <section class="projects-preview">
+  <h2>Recente projecten</h2>
+  <div class="projects-grid">
+    <a href="/projects/project1" class="project-card">
+      <img src="/assets/project1.jpg" alt="Project 1" />
+      <div class="overlay"><span>🔍</span></div>
+    </a>
+    <a href="/projects/project2" class="project-card">
+      <img src="/assets/project2.jpg" alt="Project 2" />
+      <div class="overlay"><span>🔍</span></div>
+    </a>
+    <a href="/projects/project3" class="project-card">
+      <img src="/assets/project3.jpg" alt="Project 3" />
+      <div class="overlay"><span>🔍</span></div>
+    </a>
+  </div>
+</section>
+</Layout>
