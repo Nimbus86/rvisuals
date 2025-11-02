@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="rvisuals | Projecten">
+  <section class="projects-page">
+    <h1 class="projects-heading">Mijn Portfolio</h1>
+    <p class="projects-intro">
+      Een selectie van recente projecten waarin design, animatie en technologie samenkomen.
+    </p>
+
+    <div class="projects-list">
+      <!-- Project 1 -->
+      <article id="project1" class="project-card">
+        <h3 class="project-title">Twitch stream animated overlay</h3>
+        <video autoplay loop muted playsinline class="project-video">
+          <source src="/rvisuals/x1.webm" type="video/webm" />
+          <source src="/rvisuals/x1.mp4" type="video/mp4" />
+          Je browser ondersteunt geen video.
+        </video>
+        <p class="project-desc">
+          Een overlay die aan de hand van een sneltoets op de streamer zijn scherm komt.
+        </p>
+      </article>
+
+      <!-- Project 2 -->
+       <article id="project1" class="project-card">
+        <h3 class="project-title">Twitch stream animated overlay ballonnen</h3>
+        <video autoplay loop muted playsinline class="project-video">
+          <source src="/rvisuals/x2.webm" type="video/webm" />
+          <source src="/rvisuals/x1.mp4" type="video/mp4" />
+          Je browser ondersteunt geen video.
+        </video>
+        <p class="project-desc">
+          Een overlay die aan de hand van een sneltoets op de streamer zijn scherm komt.
+          Ballonnen animatie gemaakt aan de hand van Geometric nodes in Blender.
+        </p>
+      </article>
+
+      <!-- Project 3 -->
+      <article id="project3" class="project-card">
+        <h3 class="project-title">Project 3</h3>
+        <img src="/rvisuals/project3.jpg" alt="Project 3" />
+        <p class="project-desc">
+          Beschrijving van project 3. Voeg hier een korte samenvatting toe van het resultaat.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>

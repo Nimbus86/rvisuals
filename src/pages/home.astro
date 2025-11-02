@@ -11,16 +11,16 @@ import Layout from "../layouts/Layout.astro";
         Unlock het potentieel van jouw merk met Rvisuals.
       </p>
       <div class="hero-buttons">
-        <a href="/projects" class="btn">Get Started</a>
+        <a href="/rvisuals/dienst-aanvragen" class="btn">Get Started</a>
       </div>
     </div>
   </section>
 
   <!-- Thumbnail sectie -->
  <section class="thumbnail-section">
-  <video class="hero-video" autoplay loop playsinline poster="/assets/video.png">
+  <video class="hero-video" autoplay playsinline poster="/assets/video.png">
     <source src="/public/tekstvlieger.webm" type="video/webm" />
-    <source src="/public/tekstvlieger.mp4" type="video/mp4" />
+    <source src="/rvisuals/tekstvlieger.mp4" type="video/mp4" />
   </video>
 </section>
 
@@ -39,15 +39,20 @@ import Layout from "../layouts/Layout.astro";
  <section class="projects-preview">
   <h2>Recente projecten</h2>
   <div class="projects-grid">
-    <a href="/projects/project1" class="project-card">
-      <img src="/assets/project1.jpg" alt="Project 1" />
+    <a href="/rvisuals/projects#project1" class="project-card">
+      <h3 class="project-title">Twitch stream overlay</h3>
+      <img src="/rvisuals/x1.png" alt="Project 1" />
       <div class="overlay"><span>🔍</span></div>
     </a>
-    <a href="/projects/project2" class="project-card">
-      <img src="/assets/project2.jpg" alt="Project 2" />
+
+    <a href="/rvisuals/projects#project2" class="project-card">
+      <h3 class="project-title">Twitch stream overlay ballon</h3>
+      <img src="/rvisuals/x2.png" alt="Project 2" />
       <div class="overlay"><span>🔍</span></div>
     </a>
-    <a href="/projects/project3" class="project-card">
+
+    <a href="/rvisuals/projects#project3" class="project-card">
+      <h3 class="project-title">Project 3</h3>
       <img src="/assets/project3.jpg" alt="Project 3" />
       <div class="overlay"><span>🔍</span></div>
     </a>
