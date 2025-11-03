@@ -11,19 +11,18 @@ import Layout from "../layouts/Layout.astro";
         Unlock het potentieel van jouw merk met Rvisuals.
       </p>
       <div class="hero-buttons">
-        <a href="/rvisuals/dienst-aanvragen" class="btn">Get Started</a>
+        <a href={`${import.meta.env.BASE_URL}dienst-aanvragen`} class="btn">Get Started</a>
       </div>
     </div>
   </section>
 
   <!-- Thumbnail sectie -->
- <section class="thumbnail-section">
-  <video class="hero-video" autoplay playsinline poster="/assets/video.png">
-    <source src="/public/tekstvlieger.webm" type="video/webm" />
-    <source src="/rvisuals/tekstvlieger.mp4" type="video/mp4" />
-  </video>
-</section>
-
+  <section class="thumbnail-section">
+    <video class="hero-video" autoplay playsinline poster="/video.png">
+      <source src="/tekstvlieger.webm" type="video/webm" />
+      <source src="/tekstvlieger.mp4" type="video/mp4" />
+    </video>
+  </section>
 
   <!-- Info sectie -->
   <section class="info-section">
@@ -36,26 +35,26 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- Quicklinks sectie -->
- <section class="projects-preview">
-  <h2>Recente projecten</h2>
-  <div class="projects-grid">
-    <a href="/rvisuals/projects#project1" class="project-card">
-      <h3 class="project-title">Twitch stream overlay</h3>
-      <img src="/rvisuals/x1.png" alt="Project 1" />
-      <div class="overlay"><span>🔍</span></div>
-    </a>
+  <section class="projects-preview">
+    <h2>Recente projecten</h2>
+    <div class="projects-grid">
+      <a href={`${import.meta.env.BASE_URL}projects#project1`} class="project-card">
+        <h3 class="project-title">Twitch stream overlay</h3>
+        <img src="/x1.png" alt="Project 1" />
+        <div class="overlay"><span>🔍</span></div>
+      </a>
 
-    <a href="/rvisuals/projects#project2" class="project-card">
-      <h3 class="project-title">Twitch stream overlay ballon</h3>
-      <img src="/rvisuals/x2.png" alt="Project 2" />
-      <div class="overlay"><span>🔍</span></div>
-    </a>
+      <a href={`${import.meta.env.BASE_URL}projects#project2`} class="project-card">
+        <h3 class="project-title">Twitch stream overlay ballon</h3>
+        <img src="/x2.png" alt="Project 2" />
+        <div class="overlay"><span>🔍</span></div>
+      </a>
 
-    <a href="/rvisuals/projects#project3" class="project-card">
-      <h3 class="project-title">Project 3</h3>
-      <img src="/assets/project3.jpg" alt="Project 3" />
-      <div class="overlay"><span>🔍</span></div>
-    </a>
-  </div>
-</section>
+      <a href={`${import.meta.env.BASE_URL}projects#project3`} class="project-card">
+        <h3 class="project-title">Project 3</h3>
+        <img src="/project3.jpg" alt="Project 3" />
+        <div class="overlay"><span>🔍</span></div>
+      </a>
+    </div>
+  </section>
 </Layout>
