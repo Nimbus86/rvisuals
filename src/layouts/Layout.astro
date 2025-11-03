@@ -22,7 +22,7 @@ const { title = "rvisuals" } = Astro.props;
 
         <!-- Rechterkant: menuknoppen -->
         <ul class="nav-links">
-          <li><a href={`${import.meta.env.BASE_URL}home`}>Home</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}index`}>Home</a></li>
           <li><a href={`${import.meta.env.BASE_URL}projects`}>Projects</a></li>
           <li><a href={`${import.meta.env.BASE_URL}about`}>About</a></li>
           <li><a href={`${import.meta.env.BASE_URL}contact`}>Contact</a></li>
@@ -34,7 +34,7 @@ const { title = "rvisuals" } = Astro.props;
    
     
       <slot />
-    </main>S
+    </main>
 
     <footer class="site-footer">
       <p>© {new Date().getFullYear()} rvisuals</p> 
